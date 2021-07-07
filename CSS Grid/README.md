@@ -55,7 +55,7 @@ div {
    background-color: grey;
    color: #fff;
    padding: 2rem;
-   border: 1px solid jet;
+   border: 1px solid #999;
 }
 ```
 ##### Result
@@ -78,6 +78,7 @@ Which is why I highly recommend you use Firefox for this because it will help yo
 
 Now to see the grid, we'll have to define the rows and columns respectively and to do that we use the property: `grid-template-columns` and `grid-template-rows`.
 
+### Grid Template Columns
 So let's specify our markup with these properties
 
 ```css
@@ -100,23 +101,16 @@ If we add an extra width, this makes it four columns and the last column starts 
 ```
 <!-- Image of Four column grid -->
 
+### Repeat 
 Let's say you want to create a 10 `200px` column grid, there is a shortcut for doing that without writing 200px 10 times which is by using the **repeat** property. 
 
-```html 
-<div class="container">
-   <div>Item One</div>
-   <div>Item Two</div>
-   <div>Item Three</div>
-   <div>Item Four</div>
-   <div>Item Five</div>
-   <div>Item Six</div>
-   <div>Item Seven</div>
-   <div>Item Eight</div>
-   <div>Item Nine</div>
-   <div>Item Ten</div>
-   <div>Item Eleven</div>
-</div>
+```css 
+.container {
+   display: grid;
+   grid-template-columns: repeat(200px 200px 200px 200px 200px 200px 200px 200px 200px 200px);
+}
 ```
+Can also be written as:
 
 ```css 
 .container {
@@ -124,6 +118,19 @@ Let's say you want to create a 10 `200px` column grid, there is a shortcut for d
    grid-template-columns: repeat(10, 200px);
 }
 ```
+
+The repeat notation can also be combined with other track units. In the example below, we have a 200px track combined with 6(1fr) track. 
+
+##### Example
+```css
+.container {
+   display: grid;
+   grid-template-columns: 200px repeat(6, 1fr);
+}
+```
+##### Result
+<!-- Picture of combined track of  -->
+
 
 <!-- Ten column grid -->
 The result shows us a Ten column grid with the eleventh box knocked to the next line and a scroll bar. This is what we call a fixed grid. Now grid also introduced a flexible unit called the fraction `fr` unit as mentioned earlier. This represent a fraction of the available space in a container and you'll mostly be using `fr` units with grid. 
@@ -149,5 +156,112 @@ The result shows us a Ten column grid with the eleventh box knocked to the next 
 ##### Result 
 <!-- Image of Three column grid (fr) -->
 
-This creates a grid column that spans across the full width of the page but still maintains the three column specified and knocks the other two grid items to the next line. This is why `fr` units are cool, building responsive layouts becomes easier.
+This creates a grid column that spans across the full width of the page but still maintains the three column specified and knocks the other two grid items to the next line. This is why `fr` units are cool and it makes building responsive layouts easier. _You can also use the repeat property on the `fr` unit_
 
+```css
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+```
+This gives the same result as above.
+
+### Combining Units
+We can also combine units to get a desired layout. In the example below, we'll combine a `2fr` unit with two `1fr` units track. The `2fr` unit takes up double of the space and the `1fr` track takes up single space each. 
+
+###### Example
+
+```html 
+<div class="container">
+   <div>Item One</div>
+   <div>Item Two</div>
+   <div>Item Three</div>
+   <div>Item Four</div>
+   <div>Item Five</div>
+</div>
+```
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+}
+```
+
+**Result**
+<!-- Image of combining fractions (fr) -->
+
+This can be applied to other units as well. In this example below, we combine a `500px` track with  a `1fr` and `2fr` track
+
+```html 
+<div class="container">
+   <div>Item One</div>
+   <div>Item Two</div>
+   <div>Item Three</div>
+   <div>Item Four</div>
+   <div>Item Five</div>
+</div>
+```
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: 500px 2fr 1fr;
+}
+```
+<!-- Picture of combining fractions and pixels (fr) & (px) -->
+
+
+### Implicit & Explicit grid
+Previously, we specifically defined our column tracks with the `grid-template-columns` property and the grid also created rows even though we didn't specify the rows with `grid-template-rows`. These rows are what we call the implicit grid(Implied grid though not suggested). Whereas the explicit grid consist of any row and column defined with `grid-template-column` or `grid-template-rows`(Stated clearly). This might be a little bit confusing at first but with some examples, it'll become easier to grasp. 
+
+##### Example
+<!-- Image of Implicit grid  -->
+
+For instance in the example below we have 8 grid child elements and we specify 3 grid columns, so the remaining columns not specified is knocked over to create rows and columns in the implicit grid which are automatically sized by default, where the size is determined by the content inside. 
+
+```html 
+<div class="container">
+   <div>Item One</div>
+   <div>Item Two</div>
+   <div>Item Three</div>
+   <div>Item Four</div>
+   <div>Item Five</div>
+   <div>Item Six</div>
+   <div>Item Seven</div>
+   <div>Item Eight</div>
+</div>
+```
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+```
+
+<!-- Image of Implicit grid row and column -->
+In the diagram above, we have two grid tracks at the bottom that is outside of the defined grid. This is what we call the Implicit grid, but the grid track above that is defined with 3 columns each is the Explicit grid. 
+
+There is a way to control the size of the implicit grid track using: `grid-auto-rows` and `grid-auto-columns` 
+
+```html 
+<div class="container">
+   <div>Item One</div>
+   <div>Item Two</div>
+   <div>Item Three</div>
+   <div>Item Four</div>
+   <div>Item Five</div>
+</div>
+```
+
+```css
+.container {
+   display: grid;
+   /* grid-template-columns: repeat(3, 1fr); */
+   grid-auto-rows: 200px;
+   grid-auto-columns: 200px;
+}
+```
+
+Now this makes every grid item created in the implicit grid to be 200px tall.
