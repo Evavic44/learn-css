@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Basic Concepts</title>
+   <style>
+      .container div {
+         background-color: #4c6ca0;
+         color: #fff;
+         padding: 2rem;
+         border: 1px solid #999;
+      }
+      
+      .container {
+         display: grid;
+         /* Fixed units */
+         /* grid-template-columns: 200px 200px 200px;  */
+         /* Repeat */
+         /* grid-template-columns: repeat(10, 200px);  */
+         /* Flexible units */
+         grid-template-columns: 1fr 1fr 1fr;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div>Item One</div>
+      <div>Item Two</div>
+      <div>Item Three</div>
+      <div>Item Four</div>
+      <div>Item Five</div>
+   </div>
+</body>
+</html>
