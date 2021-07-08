@@ -364,6 +364,7 @@ Now you can see that `Item one` starts at 1 (the default position) on the column
 ```
 
 <!-- Image of grid-row-start and grid-row-end -->
+
 Here `Item one` starts at 1 on the rows spans down and ends in line 4. You can span multiple grid items using this property. 
 
 There is a shorter way of spaning grid items by using the property: `grid-column` and `grid-row` which is a combination of `grid-column start`/`grid-column-end` & `grid-row-start`/`grid-row-end`
