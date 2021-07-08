@@ -6,6 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Basic Concepts</title>
    <style>
+      body {
+         margin: 100px 30px;
+      }
+
       .container div {
          background-color: #4c6ca0;
          color: #fff;
@@ -32,8 +36,21 @@
 
          /* ---Combining repeat notion with other units--- */
          /* grid-template-columns: 200px repeat(6, 1fr); */
-         grid-template-columns: repeat(3, 1fr);
-         grid-auto-rows: 200px;
+         grid-template-columns: repeat(4, 1fr);
+         /* grid-auto-rows: minmax(100px, auto); */
+      }
+
+      .container div:first-child {
+         /* grid-column-start: 1;
+         grid-column-end: 4;
+         grid-row-start: 1;
+         grid-row-end: 4; */
+
+         /* grid-column: 1 / 4;
+         grid-row: 1 / 4; */
+
+         grid-column: 1 / span 3;
+         grid-row: 1 / span 3;
       }
    </style>
 </head>
@@ -44,6 +61,10 @@
       <div>Item Three</div>
       <div>Item Four</div>
       <div>Item Five</div>
+      <div>Item Six</div>
+      <div>Item Seven</div>
+      <div>Item Eight</div>
+      <div>Item Nine</div>
    </div>
 </body>
 </html>
