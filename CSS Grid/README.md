@@ -307,6 +307,7 @@ The column lines are the numbers inside the yellow squares, while the row lines 
 ### **Position/Span Grid Rows and Columns**
 We can span or position grid columns and rows along the lines of the grid container. Spanning grid columns and rows can be very useful when building complex layouts. Spanning grid items consist of the following property: `grid-column-start`, `grid-column-end` and `grid-row-start`, `grid-row-end` properties.
 
+Spanning and positioning grid items is a very important tool you can use in building complex layouts with CSS grid which I'll be haring in another article (hopefully). 
 <!-- Image of span & position -->
 
 In the image above, we have a grid container with four columns and three rows. Say we want to position `Item one` in the second column, we'll do that by first targeting the `Item one` using <a href="sudo-selectors" target="_blank" title="Sudo selectors - MDN Reference">sudo selectors</a> _(though you can add custom classes to the items if you lke)_ 
@@ -392,4 +393,43 @@ This gives us thesame result as above and is much more shorter to write.
 }
 ```
 
-The `span` property is basically saying start at 1 and span across 3, which gives us thesame result. This might be a bit tricky to grasp and you don't have to use the span if you don't want to but is something you might need to know.
+The `span` property is basically saying start at 1 and span across 3, which gives us thesame result. One of the diffenreces of using span is that you don't need to know what line number you want the grid cell to move to, you can just say span and specify how many lines you want the grid item to move across and the grid item would span across as instructed. This might be a bit tricky to grasp at first and you don't have to use the span if you don't want to but I think it is something you might need to know.
+
+### Gutters 
+Gutters also known as gaps can be added between grid rows or columns to space them apart. This behaves almost like adding margins in between the grid items but this time we're adding the `gap` property to the grid container and not the individual grid items. To do that with, we use the `grid-column-gap` and `grid-row-gap` property which is short for `row-gap` (Adds spacing between rows), `column-gap` (Adds spacing between columns) and `gap` (Adds spacing between columns and rows). 
+
+#### Example
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 1rem;
+}
+```
+
+<!-- Image of column gap -->
+
+This adds a spacing of `1rem` between every column in the grid container as seen in the image above. 
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   row-gap: 1rem; 
+}
+```
+
+#### Example 2
+
+<!-- image of row gp -->
+
+This adds a spacing of `1rem` between every row in the grid container as seen in the image above. 
+
+To add a gap between columns and rows we use the `gap`  property, which is a combination of the `grid-column-gap` and `grid-row-gap`. 
+
+
+<!-- Image of gap  -->
+Now you can see this adds a spacing between the columns and the rows. 
+
+### Nesting grids
