@@ -69,9 +69,14 @@ Now let's set the parent `.container` to a grid container
 ```
 
 ### **Grid Highlighter**
-If you notice, this dosen't change the markup of the boxes because we haven't specified how we want the layout to be. To see the grid, we'll be using a Firefox tool called <a href="#">Grid highlighter</a> to see the grid lines. To see the inspector, open up the developer's tab using the **Ctrl + Shift + I** on windows and **CMD + Shift + I** on mac and then navigate to the layout section, you'll see the `Grid` menu just above the box-model. Check the grid-container box to enable the grid highlighter. Another way to do this is to check the tiny grid box next to the `display: grid` in the developer tool. 
+If you notice, this dosen't change the markup of the boxes because we haven't specified how we want the layout to be. To see the grid, we'll be using a tool called `Grid highlighter` on firefox and chrome to see the grid lines. To enable this inspector, open up the developer's tab using **Ctrl + Shift + I** on windows and **CMD + Shift + I** on mac. If you're using Firefox, then navigate to the layout section, you'll see the `Grid` menu just above the box-model. Check the grid-container box to enable the grid highlighter. Another way to do this is to check the tiny grid box next to the `display: grid` in the developer tool. If you're on Chrome, open up the developer tools and navigate to the layout tab as well, you'll see the grid overlay button which will toggle on the grid highlighter.
 
-<!-- Image of the grid highlighter -->
+##### Firefox
+<!-- Image of the grid highlighter on firefox-->
+
+##### Chrome
+<!-- Image of the grid highlighter on chrome-->
+
 As you can see, this displays a colored border around the grid container and between each grid items and numbers going horizontally and vertically _(more details on the numbers later)_. 
 
 Which is why I highly recommend you use Firefox for this because it will help you when working with CSS grids.
@@ -166,7 +171,7 @@ This creates a grid column that spans across the full width of the page but stil
 ```
 This gives the same result as above.
 
-### *Combining Units*
+### **Combining Units**
 We can also combine units to get a desired layout. In the example below, we'll combine a `2fr` unit with two `1fr` units track. The `2fr` unit takes up double of the space and the `1fr` track takes up single space each. 
 
 #### Example
@@ -266,7 +271,7 @@ There is a way to control the size of the implicit grid track using: `grid-auto-
 Now this makes every grid item created in the implicit grid to be 200px tall.
 
 ### **Track Sizing and Minmax**
-When defining the sizing for automatically created rows or columns, you may want to give the tracks a minimum size initially and a maximum size to ensure the track expands to fit the content. This is where the `minmax()` property comes in. `Minmax ` which stands for _minimum_, _maximum_ is a property used for specifying the minmimum and maximum values of a grid track. 
+When defining the sizing for automatically created rows or columns, you may want to give the tracks a minimum size initially and a maximum size to ensure the track expands to fit the content. This is where the `minmax()` property comes in. `Minmax ` which stands for _minimum_, _maximum_ is a function used for specifying the minmimum and maximum size of a grid track. 
 
 In the example below, we used the `minmax()` property to specify the initial height of a box to be `100px` at minimum and set the maximum to `auto` which will make the grid container to stretch and fit any content if it get's taller than 200px.
 
@@ -434,3 +439,4 @@ To add a gap between columns and rows we use the `gap`  property, which is a com
 Now you can see this adds a spacing between the columns and the rows. 
 
 ### Nesting grids
+A grid child item can also serve as a grid container 
