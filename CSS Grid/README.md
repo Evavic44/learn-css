@@ -12,7 +12,7 @@ This is a tutorial in a series I'm working on, which is Building Responsive webs
 ### **Prerequisites**
 - A basic understanding of HTML and CSS
 - A text-editor: - <a href="#" alt="VS code website" target="_blank">VS Code</a> or <a href="#" alt="Atom" target="_blank">Atom</a> (Or Notepad++, whatever works for you.) 
-- A browser: <a href="#" target="_blank">Firefox</a> _(highly recommended)_ or <a href="#" target="_blank">Chrome</a> (You can as well use any good browser you're comfortable with except IE)
+- A browser: <a href="#" target="_blank">Firefox</a> or <a href="#" target="_blank">Chrome</a> (or anyone you're most comfortable with, except IE)
 
 ### **Additional Information**
 The code files can be found in the grid folder.
