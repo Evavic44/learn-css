@@ -10,9 +10,12 @@ This is a tutorial in a series I'm working on, which is Building Responsive webs
 - Ability to recreate layouts with `Grid`
 
 ### **Prerequisites**
-- A basic understanding of HTML and CSS
-- A text-editor: - <a href="#" alt="VS code website" target="_blank">VS Code</a> or <a href="#" alt="Atom" target="_blank">Atom</a> (Or Notepad++, whatever works for you.) 
-- A browser: <a href="#" target="_blank">Firefox</a> or <a href="#" target="_blank">Chrome</a> (or anyone you're most comfortable with, except IE)
+
+<ul>
+   <li>A basic understanding of HTML and CSS</li>
+   <li>A text-editor: <a href="#" alt="VS code website" target="_blank">VS Code</a>, <a href="#" alt="Sublime website" target="_blank">Sublime Text</a> or <a href="#" alt="Atom" target="_blank">Atom</a></li>
+   <li>A browser: <a href="#" target="_blank">Firefox</a> or <a href="#" target="_blank">Chrome</a> (or anyone you're most comfortable with, except IE)</li>
+</ul>
 
 ### **Additional Information**
 The code files can be found in the grid folder.
