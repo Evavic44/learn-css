@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grid Layouts</title>
+   <style>
+      .container div {
+         background-color: #4c6ca0;
+         color: #fff;
+         padding: 2rem;
+         border: 1px solid #999;
+      }
+
+      .container {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-auto-rows: minmax(200px, 1fr);
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 5</div>
+   </div>
+</body>
+</html>
