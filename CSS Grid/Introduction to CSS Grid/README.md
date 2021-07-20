@@ -25,17 +25,18 @@ _Have the following list down? Let's get started_
 <h2 align="center"><b>What Is CSS Grid</b></h2>
 Css grid is a layout system use for building two-dimensional layouts by using rows and columns. Grid can be used for building simple interfaces and complex interface like the <a href="#" target="_blank">Periodic Table</a>
 
-_This is how grid is different from Flexbox by the ability to create multiple layouts with one grid container_ 
+<br/><br/>
 
-<!-- Image of Flexbox showing one dimension -->
-<!-- Image of Grid showing two dimensions -->
+_This is how grid is different from Flexbox by the ability to create multiple layouts with one grid container_ 
+<!-- Image of flexbox vs grid -->
+<img src="https://user-images.githubusercontent.com/62628408/126242420-8fc366dc-f511-48a1-b29d-ca5f19f8d64e.png" width="700px" height="400px">
+
 
 <!-- A grid box labelling the following -->
 - grid names
 - grid lines
 - grid rows
 - grid columns
-- etc
 
 To create a grid, we can simply do this by setting an element to: `display: grid` or `display: inline-grid` This automatically makes all the direct children of the element a _grid item_ which is kind of similar to flexbox that has it's direct children as _flex items_.
 
