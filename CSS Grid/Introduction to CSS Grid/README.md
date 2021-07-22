@@ -29,14 +29,7 @@ Css grid is a layout system use for building two-dimensional layouts by using ro
 
 _This is how grid is different from Flexbox by the ability to create multiple layouts with one grid container_ 
 <!-- Image of flexbox vs grid -->
-<img src="https://user-images.githubusercontent.com/62628408/126242420-8fc366dc-f511-48a1-b29d-ca5f19f8d64e.png" width="700px" height="400px">
-
-
-<!-- A grid box labelling the following -->
-- grid names
-- grid lines
-- grid rows
-- grid columns
+<img src="https://user-images.githubusercontent.com/62628408/126242420-8fc366dc-f511-48a1-b29d-ca5f19f8d64e.png" width="800px">
 
 To create a grid, we can simply do this by setting an element to: `display: grid` or `display: inline-grid` This automatically makes all the direct children of the element a _grid item_ which is kind of similar to flexbox that has it's direct children as _flex items_.
 
@@ -51,18 +44,19 @@ This is a div with a class of container and inside the container, we have four c
    <div>Item Four</div>
 </div>
 ```
+
 Now let's add a simple styling to this so we can distinguish them.
 
 ```css
 div {
-   background-color: grey;
+   background-color: #4c6ca0;
    color: #fff;
    padding: 2rem;
    border: 1px solid #999;
 }
 ```
 #### Result
-<!-- Image of the box with display set to grid -->
+<img src="https://user-images.githubusercontent.com/62628408/126678821-2462c345-feb1-4f37-907c-3478459001eb.png" width="800px">
 
 Now let's set the parent `.container` to a grid container
 
@@ -72,14 +66,23 @@ Now let's set the parent `.container` to a grid container
 }
 ```
 
+Doing this alone dosen't change the markup of the boxes because we haven't specified how we want the layout to be. 
+<br/>
+
 ### **Grid Highlighter**
-If you notice, this dosen't change the markup of the boxes because we haven't specified how we want the layout to be. To see the grid, we'll be using a tool called `Grid highlighter` on firefox and chrome to see the grid lines. To enable this inspector, open up the developer's tab using **Ctrl + Shift + I** on windows and **CMD + Shift + I** on mac. If you're using Firefox, then navigate to the layout section, you'll see the `Grid` menu just above the box-model. Check the grid-container box to enable the grid highlighter. Another way to do this is to check the tiny grid box next to the `display: grid` in the developer tool. If you're on Chrome, open up the developer tools and navigate to the layout tab as well, you'll see the grid overlay button which will toggle on the grid highlighter.
+The Grid Inspector allows you to examine CSS Grid Layouts using the DevTools, discovering grids present on a page, examining and modifying them, debugging layout issues, and more.
+
 
 ##### Firefox
+On Firefox, open up the developer's tab using **<kbd>Ctrl + Shift + I</kbd>** on windows and **<kbd>CMD + Opt + I</kbd>** on mac. If you're using Firefox, then navigate to the layout section, you'll see the `Grid` menu just above the box-model. Check the grid-container box to enable the grid highlighter. Another way to do this is to check the tiny grid box next to the `display: grid` in the developer tool.
 <!-- Image of the grid highlighter on firefox-->
+<img src="https://user-images.githubusercontent.com/62628408/126693362-a4710fa7-0381-4813-b59e-ae521d2196c7.png" width="800px">
+
 
 ##### Chrome
+If you're on Chrome, open up the developer tools and navigate to the layout tab as well, you'll see the grid overlay button which will toggle on the grid highlighter.
 <!-- Image of the grid highlighter on chrome-->
+
 
 As you can see, this displays a colored border around the grid container and between each grid items and numbers going horizontally and vertically _(more details on the numbers later)_. 
 
