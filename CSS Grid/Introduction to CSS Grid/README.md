@@ -73,15 +73,18 @@ Doing this alone dosen't change the markup of the boxes because we haven't speci
 The Grid Inspector allows you to examine CSS Grid Layouts using the DevTools, discovering grids present on a page, examining and modifying them, debugging layout issues, and more.
 
 
-##### Firefox
+##### `Firefox`
+
 On Firefox, open up the developer's tab using **<kbd>Ctrl + Shift + I</kbd>** on windows and **<kbd>CMD + Opt + I</kbd>** on mac. If you're using Firefox, then navigate to the layout section, you'll see the `Grid` menu just above the box-model. Check the grid-container box to enable the grid highlighter. Another way to do this is to check the tiny grid box next to the `display: grid` in the developer tool.
 <!-- Image of the grid highlighter on firefox-->
 <img src="https://user-images.githubusercontent.com/62628408/126693362-a4710fa7-0381-4813-b59e-ae521d2196c7.png" width="800px">
 
 
-##### Chrome
+##### `Chrome`
+
 If you're on Chrome, open up the developer tools and navigate to the layout tab as well, you'll see the grid overlay button which will toggle on the grid highlighter.
 <!-- Image of the grid highlighter on chrome-->
+<img src="https://user-images.githubusercontent.com/62628408/126695018-600e53de-0ce1-4df4-b654-1ec54d9a0a68.png" width="800px">
 
 
 As you can see, this displays a colored border around the grid container and between each grid items and numbers going horizontally and vertically _(more details on the numbers later)_. 
