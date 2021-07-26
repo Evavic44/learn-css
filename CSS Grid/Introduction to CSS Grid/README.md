@@ -160,7 +160,7 @@ Fixed units are units that takes the specified width of a given grid cell and do
 ```css
 .container {
    display: grid;
-   grid-template-columns: repeat(3, 200px);
+   grid-template-columns: repeat(3, 300px);
 }
 ```
 
