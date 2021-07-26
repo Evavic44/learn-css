@@ -148,8 +148,7 @@ The repeat notation can also be combined with other track units. In the example 
 }
 ```
 #### Result
-<!-- Picture of combined track of  -->
-
+<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
 
 <!-- Ten column grid -->
 The result shows us a Ten column grid with the eleventh box knocked to the next line and a scroll bar. This is what we call a fixed grid. Now grid also introduced a flexible unit called the fraction `fr` unit as mentioned earlier. This represent a fraction of the available space in a container and you'll mostly be using `fr` units with grid. 
@@ -162,6 +161,11 @@ The result shows us a Ten column grid with the eleventh box knocked to the next 
    <div>Item Three</div>
    <div>Item Four</div>
    <div>Item Five</div>
+   <div>Item Six</div>
+   <div>Item Seven</div>
+   <div>Item Eight</div>
+   <div>Item Nine</div>
+   <div>Item Ten</div>
 </div>
 ```
 
@@ -173,7 +177,8 @@ The result shows us a Ten column grid with the eleventh box knocked to the next 
 ```
 
 #### Result 
-<!-- Image of Three column grid (fr) -->
+<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
+![Three column fr grid](https://user-images.githubusercontent.com/62628408/126920327-41d09b38-a326-443f-884b-f923f809cd0b.gif)
 
 This creates a grid column that spans across the full width of the page but still maintains the three column specified and knocks the other two grid items to the next line. This is why `fr` units are cool and it makes building responsive layouts easier. _You can also use the repeat property on the `fr` unit_
 
