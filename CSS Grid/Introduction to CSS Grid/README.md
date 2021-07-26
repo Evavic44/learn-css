@@ -139,9 +139,13 @@ Can also be written as:
 <img src="https://user-images.githubusercontent.com/62628408/126919264-0c1057d2-f43d-4ee1-a4ad-4f4b5f4ded4d.png" width="800px">
 
 ### Fixed & Flexible Units
-Fixed units are units that takes the specified width of a given grid cell and does not adjust to the container. For example `px`, `rem` etc. Flexible units are units that adjust to the container element. 
+You can create a grid with fixed track sizes – using pixels for example. This sets the grid to the specified pixel which fits to the layout you desire.For example `px`, `rem` etc. Flexible units are units that adjust to the container element. 
 
-#### Example
+### Fixed Unit
+Fixed units are units that takes the specified width of a given grid cell and does not adjust to the container.
+
+**Example**
+
 ```html 
 <div class="container">
    <div>Item One</div>
@@ -149,27 +153,35 @@ Fixed units are units that takes the specified width of a given grid cell and do
    <div>Item Three</div>
    <div>Item Four</div>
    <div>Item Five</div>
-   <div>Item Six</div>
-   <div>Item Seven</div>
-   <div>Item Eight</div>
-   <div>Item Nine</div>
-   <div>Item Ten</div>
+   <div>Item Six<div>
 </div>
 ```
 
 ```css
 .container {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: repeat(3, 200px);
 }
 ```
 
-##### Flexible unit 
-<!-- Add a flexible unit gif -->
+**Result**
+<!-- Add a fixed unit gif-->
 
-<!-- Add a fixed unit gif -->
 
-This creates a grid column that spans across the full width of the page but still maintains the three column specified and knocks the other two grid items to the next line. This is why `fr` units are cool and it makes building responsive layouts easier. _You can also use the repeat property on the `fr` unit_
+### Flexible Units
+You can also create a grid using flexible sizes with percentages or with the new fr unit designed for this purpose. The `fr` units are cool and it makes building responsive layouts easier. You can also use the repeat property on the `fr` unit.
+
+**Example**
+```html 
+<div class="container">
+   <div>Item One</div>
+   <div>Item Two</div>
+   <div>Item Three</div>
+   <div>Item Four</div>
+   <div>Item Five</div>
+   <div>Item Six<div>
+</div>
+```
 
 ```css
 .container {
@@ -177,8 +189,10 @@ This creates a grid column that spans across the full width of the page but stil
    grid-template-columns: repeat(3, 1fr);
 }
 ```
-This gives the same result as above.
 
+**Result**
+
+<!-- Add a flexible unit gif -->
 
 ### **Combining Units**
 
