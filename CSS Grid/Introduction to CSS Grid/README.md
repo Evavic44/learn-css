@@ -100,6 +100,7 @@ So let's specify our markup with these properties
    grid-template-columns: 200px 200px 200px; 
 }
 ```
+
 <img src="https://user-images.githubusercontent.com/62628408/126916896-5450e1a6-038e-4fe7-a754-30b3890a3c5f.png" width="800px">
 
 
@@ -137,21 +138,8 @@ Can also be written as:
 
 <img src="https://user-images.githubusercontent.com/62628408/126919264-0c1057d2-f43d-4ee1-a4ad-4f4b5f4ded4d.png" width="800px">
 
-
-The repeat notation can also be combined with other track units. In the example below, we have a 200px track combined with 6(1fr) track. 
-
-#### Example
-```css
-.container {
-   display: grid;
-   grid-template-columns: 200px repeat(6, 1fr);
-}
-```
-#### Result
-<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
-
-<!-- Ten column grid -->
-The result shows us a Ten column grid with the eleventh box knocked to the next line and a scroll bar. This is what we call a fixed grid. Now grid also introduced a flexible unit called the fraction `fr` unit as mentioned earlier. This represent a fraction of the available space in a container and you'll mostly be using `fr` units with grid. 
+### Fixed & Flexible Units
+Fixed units are units that takes the specified width of a given grid cell and does not adjust to the container. For example `px`, `rem` etc. Flexible units are units that adjust to the container element. 
 
 #### Example
 ```html 
@@ -176,9 +164,10 @@ The result shows us a Ten column grid with the eleventh box knocked to the next 
 }
 ```
 
-#### Result 
-<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
-![Three column fr grid](https://user-images.githubusercontent.com/62628408/126920327-41d09b38-a326-443f-884b-f923f809cd0b.gif)
+##### Flexible unit 
+<!-- Add a flexible unit gif -->
+
+<!-- Add a fixed unit gif -->
 
 This creates a grid column that spans across the full width of the page but still maintains the three column specified and knocks the other two grid items to the next line. This is why `fr` units are cool and it makes building responsive layouts easier. _You can also use the repeat property on the `fr` unit_
 
@@ -190,8 +179,11 @@ This creates a grid column that spans across the full width of the page but stil
 ```
 This gives the same result as above.
 
+
 ### **Combining Units**
-We can also combine units to get a desired layout. In the example below, we'll combine a `2fr` unit with two `1fr` units track. The `2fr` unit takes up double of the space and the `1fr` track takes up single space each. 
+
+We can also combine units to get a desired layout. 
+In the example below, we'll combine a `2fr` unit with two `1fr` units track. The `2fr` unit takes up double of the space and the `1fr` track takes up single space each. 
 
 #### Example
 
@@ -235,6 +227,70 @@ This can be applied to other units as well. In this example below, we combine a 
 ```
 <!-- Picture of combining fractions and pixels (fr) & (px) -->
 
+The repeat notation can also be combined with other track units. In the example below, we have a 200px track combined with 6(1fr) track. 
+
+#### Example
+```css
+.container {
+   display: grid;
+   grid-template-columns: 200px repeat(6, 1fr);
+}
+```
+#### Result
+
+<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
+
+<!-- Ten column grid -->
+The result shows us a Ten column grid with the eleventh box knocked to the next line and a scroll bar. This is what we call a fixed grid. Now grid also introduced a flexible unit called the fraction `fr` unit as mentioned earlier. This represent a fraction of the available space in a container and you'll mostly be using `fr` units with grid. 
+
+#### Example
+```html 
+<div class="container">
+   <div>Item One</div>
+   <div>Item Two</div>
+   <div>Item Three</div>
+   <div>Item Four</div>
+   <div>Item Five</div>
+   <div>Item Six</div>
+   <div>Item Seven</div>
+   <div>Item Eight</div>
+   <div>Item Nine</div>
+   <div>Item Ten</div>
+</div>
+```
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+```
+
+#### Result 
+<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
+
+This creates a grid column that spans across the full width of the page but still maintains the three column specified and knocks the other two grid items to the next line. This is why `fr` units are cool and it makes building responsive layouts easier. _You can also use the repeat property on the `fr` unit_
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+```
+This gives the same result as above.
+
+In the example below, we have a 200px track combined with 6(1fr) track. 
+
+#### Example
+```css
+.container {
+   display: grid;
+   grid-template-columns: 200px repeat(6, 1fr);
+}
+```
+#### Result
+
+<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
 
 ### **Implicit & Explicit grid**
 Previously, we specifically defined our column tracks with the `grid-template-columns` property and the grid also created rows even though we didn't specify the rows with `grid-template-rows`. These rows are what we call the implicit grid(Implied grid though not suggested). Whereas the explicit grid consist of any row and column defined with `grid-template-column` or `grid-template-rows`(Stated clearly). This might be a little bit confusing at first but with some examples, it'll become easier to grasp. 
