@@ -89,8 +89,6 @@ If you're on Chrome, open up the developer tools and navigate to the layout tab 
 
 As you can see, this displays a colored border around the grid container and between each grid items and numbers going horizontally and vertically _(more details on the numbers later)_. 
 
-Which is why I highly recommend you use Firefox for this because it will help you when working with CSS grids.
-
 Now to see the grid, we'll have to define the rows and columns respectively and to do that we use the property: `grid-template-columns` and `grid-template-rows`.
 
 ### **Grid Template Columns**
@@ -102,7 +100,8 @@ So let's specify our markup with these properties
    grid-template-columns: 200px 200px 200px; 
 }
 ```
-<!-- Image of the Three column grid -->
+<img src="https://user-images.githubusercontent.com/62628408/126916896-5450e1a6-038e-4fe7-a754-30b3890a3c5f.png" width="800px">
+
 
 As you can see this creates a grid that is `200px wide` each and it spans only to 3 columns and then starts off the other grid items on the next line. That is because we only specified three columns of `200px` width each.
 
@@ -114,7 +113,9 @@ If we add an extra width, this makes it four columns and the last column starts 
    grid-template-columns: 200px 200px 200px 200px; 
 }
 ```
-<!-- Image of Four column grid -->
+
+<img src="https://user-images.githubusercontent.com/62628408/126918232-0ef71f00-66e5-48c5-88ec-e2077b201ca9.png" width="800px">
+
 
 ### **Repeat**
 Let's say you want to create a 10 `200px` column grid, there is a shortcut for doing that without writing 200px 10 times which is by using the **repeat** property. 
@@ -133,6 +134,9 @@ Can also be written as:
    grid-template-columns: repeat(10, 200px);
 }
 ```
+
+<img src="https://user-images.githubusercontent.com/62628408/126919264-0c1057d2-f43d-4ee1-a4ad-4f4b5f4ded4d.png" width="800px">
+
 
 The repeat notation can also be combined with other track units. In the example below, we have a 200px track combined with 6(1fr) track. 
 
