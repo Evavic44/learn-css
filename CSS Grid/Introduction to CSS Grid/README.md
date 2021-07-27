@@ -197,7 +197,7 @@ Flexible units are units that adjust to the container element. Example of flexib
 
 **Result**
 
-<!-- Add a flexible unit gif -->
+<img src="https://user-images.githubusercontent.com/62628408/127166508-ff229133-91f3-41b8-a2f4-13c1a5f740a0.gif" width="800px">
 
 ## **Combining Units**
 
