@@ -169,7 +169,7 @@ Fixed units are units that takes the specified width of a given grid cell irresp
 
 **Result**
 
-<!-- Add a fixed unit gif -->
+<img src="https://user-images.githubusercontent.com/62628408/127165873-998474c7-8d00-437d-b833-125b05f0f97f.gif" width="800px">
 
 From this illustration, we can see that the boxes take up only 300px of it's grid cell and doesnt't shrink on smaller widths because the value is fixed and will always remain at 300px no matter the size of the viewport width `vw`.
 
