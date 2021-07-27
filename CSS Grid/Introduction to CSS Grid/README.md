@@ -2,10 +2,10 @@
 
 *This is a reference guide on CSS `grid` With Examples*
 
-### **Why this tutorial**
+## **Why this tutorial**
 This is a tutorial in a series I'm working on, which is Building Responsive websites for Junior Frontend Developers *(Though Backend and Fullstack Developers can use this for reference)* I started this project to explain in simple steps how to use grid to build layouts
 
-### **What will you gain from taking this tutorial? 💯**
+## **What will you gain from taking this tutorial? 💯**
 - A clear understanding of CSS `Grid`
 - Ability to recreate layouts with `Grid`
 
@@ -33,7 +33,8 @@ _This is how grid is different from Flexbox by the ability to create multiple la
 
 To create a grid, we can simply do this by setting an element to: `display: grid` or `display: inline-grid` This automatically makes all the direct children of the element a _grid item_ which is kind of similar to flexbox that has it's direct children as _flex items_.
 
-#### For example
+**Example**
+
 This is a div with a class of container and inside the container, we have four child elements. _note: you can call the .container any name you want, common names you'll usually see are .wrapper, .wrap, .grid or .grid-container but in this case, we'll be using the .container_ 
 
 ```html
@@ -55,7 +56,8 @@ div {
    border: 1px solid #999;
 }
 ```
-#### Result
+**Result**
+
 <img src="https://user-images.githubusercontent.com/62628408/126678821-2462c345-feb1-4f37-907c-3478459001eb.png" width="800px">
 
 Now let's set the parent `.container` to a grid container
@@ -69,18 +71,18 @@ Now let's set the parent `.container` to a grid container
 Doing this alone dosen't change the markup of the boxes because we haven't specified how we want the layout to be. 
 <br/>
 
-### **Grid Highlighter**
+## **Grid Highlighter**
 The Grid Inspector allows you to examine CSS Grid Layouts using the DevTools, discovering grids present on a page, examining and modifying them, debugging layout issues, and more.
 
 
-##### `Firefox`
+**`Firefox`**
 
 On Firefox, open up the developer's tab using **<kbd>Ctrl + Shift + I</kbd>** on windows and **<kbd>CMD + Opt + I</kbd>** on mac. If you're using Firefox, then navigate to the layout section, you'll see the `Grid` menu just above the box-model. Check the grid-container box to enable the grid highlighter. Another way to do this is to check the tiny grid box next to the `display: grid` in the developer tool.
 <!-- Image of the grid highlighter on firefox-->
 <img src="https://user-images.githubusercontent.com/62628408/126693362-a4710fa7-0381-4813-b59e-ae521d2196c7.png" width="800px">
 
 
-##### `Chrome`
+**`Chrome`**
 
 If you're on Chrome, open up the developer tools and navigate to the layout tab as well, you'll see the grid overlay button which will toggle on the grid highlighter.
 <!-- Image of the grid highlighter on chrome-->
@@ -91,7 +93,7 @@ As you can see, this displays a colored border around the grid container and bet
 
 Now to see the grid, we'll have to define the rows and columns respectively and to do that we use the property: `grid-template-columns` and `grid-template-rows`.
 
-### **Grid Template Columns**
+## **Grid Template Columns**
 So let's specify our markup with these properties
 
 ```css
@@ -118,13 +120,16 @@ If we add an extra width, this makes it four columns and the last column starts 
 <img src="https://user-images.githubusercontent.com/62628408/126918232-0ef71f00-66e5-48c5-88ec-e2077b201ca9.png" width="800px">
 
 
-### **Repeat**
-Let's say you want to create a 10 `200px` column grid, there is a shortcut for doing that without writing 200px 10 times which is by using the **repeat** property. 
+## **The repeat() notation**
+If you find yourself repeating units, you can use the repeat() function to shorten the property.
+Let's say you want to create a 10 `200px` column grid, there is a shortcut for doing that without writing 200px 10 times. 
+
+**Example**
 
 ```css 
 .container {
    display: grid;
-   grid-template-columns: repeat(200px 200px 200px 200px 200px 200px 200px 200px 200px 200px);
+   grid-template-columns: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
 }
 ```
 Can also be written as:
@@ -138,14 +143,12 @@ Can also be written as:
 
 <img src="https://user-images.githubusercontent.com/62628408/126919264-0c1057d2-f43d-4ee1-a4ad-4f4b5f4ded4d.png" width="800px">
 
-### Fixed & Flexible Units
-You can create a grid with fixed track sizes – using pixels for example. This sets the grid to the specified pixel which fits to the layout you desire.For example `px`, `rem` etc. Flexible units are units that adjust to the container element. 
+## **Fixed & Flexible Units**
+### _**Fixed Unit**_
 
-### Fixed Unit
-Fixed units are units that takes the specified width of a given grid cell and does not adjust to the container.
+Fixed units are units that takes the specified width of a given grid cell irrespective of the container width. Example of fixed units are pixels `px`, `rem` etc.
 
 **Example**
-
 ```html 
 <div class="container">
    <div>Item One</div>
@@ -165,11 +168,13 @@ Fixed units are units that takes the specified width of a given grid cell and do
 ```
 
 **Result**
-<!-- Add a fixed unit gif-->
 
+<!-- Add a fixed unit gif -->
 
-### Flexible Units
-You can also create a grid using flexible sizes with percentages or with the new fr unit designed for this purpose. The `fr` units are cool and it makes building responsive layouts easier. You can also use the repeat property on the `fr` unit.
+From this illustration, we can see that the boxes take up only 300px of it's grid cell and doesnt't shrink on smaller widths because the value is fixed and will always remain at 300px no matter the size of the viewport width `vw`.
+
+### _**Flexible Units**_
+Flexible units are units that adjust to the container element. Example of flexible units are: `%` and `fr`. The fractional unit `fr` is a new unit of length which represents a fraction of the available space in a grid container. This unit was introduced during the initial stages of CSS grid which is mostly used when working with css grid.  _You can also use the repeat property on the `fr` unit_
 
 **Example**
 ```html 
@@ -186,7 +191,7 @@ You can also create a grid using flexible sizes with percentages or with the new
 ```css
 .container {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: 1fr 1fr 1fr;
 }
 ```
 
@@ -194,13 +199,12 @@ You can also create a grid using flexible sizes with percentages or with the new
 
 <!-- Add a flexible unit gif -->
 
-### **Combining Units**
+## **Combining Units**
 
 We can also combine units to get a desired layout. 
 In the example below, we'll combine a `2fr` unit with two `1fr` units track. The `2fr` unit takes up double of the space and the `1fr` track takes up single space each. 
 
-#### Example
-
+**Example**
 ```html 
 <div class="container">
    <div>Item One</div>
@@ -217,8 +221,7 @@ In the example below, we'll combine a `2fr` unit with two `1fr` units track. The
    grid-template-columns: 1fr 2fr 1fr;
 }
 ```
-
-#### **Result**
+**Result**
 <!-- Image of combining fractions (fr) -->
 
 This can be applied to other units as well. In this example below, we combine a `500px` track with  a `1fr` and `2fr` track
@@ -241,75 +244,34 @@ This can be applied to other units as well. In this example below, we combine a 
 ```
 <!-- Picture of combining fractions and pixels (fr) & (px) -->
 
-The repeat notation can also be combined with other track units. In the example below, we have a 200px track combined with 6(1fr) track. 
+The repeat notation can also be combined with other track units. In the example below, we have a 200px track combined with 3(1fr) track. 
 
-#### Example
-```css
-.container {
-   display: grid;
-   grid-template-columns: 200px repeat(6, 1fr);
-}
-```
-#### Result
+**Example**
 
-<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
-
-<!-- Ten column grid -->
-The result shows us a Ten column grid with the eleventh box knocked to the next line and a scroll bar. This is what we call a fixed grid. Now grid also introduced a flexible unit called the fraction `fr` unit as mentioned earlier. This represent a fraction of the available space in a container and you'll mostly be using `fr` units with grid. 
-
-#### Example
-```html 
-<div class="container">
+```html
+<div claas="container">
    <div>Item One</div>
    <div>Item Two</div>
    <div>Item Three</div>
    <div>Item Four</div>
    <div>Item Five</div>
-   <div>Item Six</div>
-   <div>Item Seven</div>
-   <div>Item Eight</div>
-   <div>Item Nine</div>
-   <div>Item Ten</div>
 </div>
 ```
 
 ```css
 .container {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 200px repeat(3, 1fr);
 }
 ```
+**Result** 
+<!-- Picture of combining repeat() notation and other units -->
 
-#### Result 
-<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
 
-This creates a grid column that spans across the full width of the page but still maintains the three column specified and knocks the other two grid items to the next line. This is why `fr` units are cool and it makes building responsive layouts easier. _You can also use the repeat property on the `fr` unit_
-
-```css
-.container {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-}
-```
-This gives the same result as above.
-
-In the example below, we have a 200px track combined with 6(1fr) track. 
-
-#### Example
-```css
-.container {
-   display: grid;
-   grid-template-columns: 200px repeat(6, 1fr);
-}
-```
-#### Result
-
-<img src="https://user-images.githubusercontent.com/62628408/126920204-73771fb8-7844-4d91-bc01-0734cc881f50.png" width="800px">
-
-### **Implicit & Explicit grid**
+## **Implicit & Explicit grid**
 Previously, we specifically defined our column tracks with the `grid-template-columns` property and the grid also created rows even though we didn't specify the rows with `grid-template-rows`. These rows are what we call the implicit grid(Implied grid though not suggested). Whereas the explicit grid consist of any row and column defined with `grid-template-column` or `grid-template-rows`(Stated clearly). This might be a little bit confusing at first but with some examples, it'll become easier to grasp. 
 
-#### Example
+**Example**
 <!-- Image of Implicit grid  -->
 
 For instance in the example below we have 8 grid child elements and we specify 3 grid columns, so the remaining columns not specified is knocked over to create rows and columns in the implicit grid which are automatically sized by default, where the size is determined by the content inside. 
@@ -359,10 +321,12 @@ There is a way to control the size of the implicit grid track using: `grid-auto-
 
 Now this makes every grid item created in the implicit grid to be 200px tall.
 
-### **Track Sizing and Minmax**
-When defining the sizing for automatically created rows or columns, you may want to give the tracks a minimum size initially and a maximum size to ensure the track expands to fit the content. This is where the `minmax()` property comes in. `Minmax ` which stands for _minimum_, _maximum_ is a function used for specifying the minmimum and maximum size of a grid track. 
+## **Track Sizing and Minmax**
+When defining the sizing for automatically created rows or columns, you may want to give the tracks a minimum size initially and a maximum size to ensure the track expands to fit the content. This is where the `minmax()` property comes in. `Minmax ` which stands for _minimum_ - _maximum_ is a function used for specifying the minimum and maximum size of a grid track. 
 
 In the example below, we used the `minmax()` property to specify the initial height of a box to be `100px` at minimum and set the maximum to `auto` which will make the grid container to stretch and fit any content if it get's taller than 200px.
+
+**Example**
 
 ```html
 <div class="container">
@@ -384,24 +348,27 @@ In the example below, we used the `minmax()` property to specify the initial hei
 }
 ```
 
+**Result**
 <!-- Image of grid auto rows: minmax() -->
 
-As you can see from the diagram, we explicitly set the box to have a minimum height of 100px initially, but the one that has content inside stretches out more than 100px in other to fit the content of the grid. This is being controlled by the `auto` attribute. Notice that box four and five still remain at 100px height because the content is small enough to fit into the container without stretching the grid track. You'll be using this `grid-auto-property` a lot to specify your grid automatically, so have that in mind.   
+As you can see from the diagram, we explicitly set the box to have a minimum height of 100px initially, but the one that has content inside stretches out more than 100px in other to fit the content of the grid. 
 
-### **Grid Lines**
+This is being controlled by the `auto` attribute. Notice that box four and five still remain at 100px height because the content is small enough to fit into the container without stretching the grid track.  
+
+## **Grid Lines**
 When we define a grid container, lines are automatically drawn both horizontally and vertically along the grid tracks. _(Though you can't see these lines so you'll have to use the Firefox `grid highlighter`)._ These lines are used to position items within a grid track.
 
 **For example** below is a grid container with 3 columns and 2 rows but have 4 grid lines on the column and 3 grid lines on the row.
 
-#### Example
+**Example**
 <!-- Image of grid lines -->
 
 The column lines are the numbers inside the yellow squares, while the row lines are the green circles. Grid lines can also be named which is very helpful when positioning elements. You can <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines#naming_lines_when_defining_a_grid" target="_blank" title="Naming Grid Lines - MDN Docs">Read more</a> here.
 
-### **Position/Span Grid Rows and Columns**
+## **Position/Span Grid Rows and Columns**
 We can span or position grid columns and rows along the lines of the grid container. Spanning grid columns and rows can be very useful when building complex layouts. Spanning grid items consist of the following property: `grid-column-start`, `grid-column-end` and `grid-row-start`, `grid-row-end` properties.
 
-Spanning and positioning grid items is a very important tool you can use in building complex layouts with CSS grid which I'll be haring in another article (hopefully). 
+Spanning and positioning grid items is a very important tool you can use in building complex layouts with CSS grid. I'll be sharing an in-depth guide in another article (hopefully). 
 <!-- Image of span & position -->
 
 In the image above, we have a grid container with four columns and three rows. Say we want to position `Item one` in the second column, we'll do that by first targeting the `Item one` using <a href="sudo-selectors" target="_blank" title="Sudo selectors - MDN Reference">sudo selectors</a> _(though you can add custom classes to the items if you lke)_ 
@@ -471,7 +438,8 @@ There is a shorter way of spaning grid items by using the property: `grid-column
 ```
 
 This gives us thesame result as above and is much more shorter to write.
-#### This 
+
+**This** 
 ```css
 .container div:first-child {
    grid-column: 1 / 4;
@@ -479,7 +447,7 @@ This gives us thesame result as above and is much more shorter to write.
 }
 ```
 
-#### Can also be written as:
+**Can also be written as:**
 
 ```css 
 .container div:first-child {
@@ -490,10 +458,10 @@ This gives us thesame result as above and is much more shorter to write.
 
 The `span` property is basically saying start at 1 and span across 3, which gives us thesame result. One of the diffenreces of using span is that you don't need to know what line number you want the grid cell to move to, you can just say span and specify how many lines you want the grid item to move across and the grid item would span across as instructed. This might be a bit tricky to grasp at first and you don't have to use the span if you don't want to but I think it is something you might need to know.
 
-### Gutters 
+## **Gutters** 
 Gutters also known as gaps can be added between grid rows or columns to space them apart. This behaves almost like adding margins in between the grid items but this time we're adding the `gap` property to the grid container and not the individual grid items. To do that with, we use the `grid-column-gap` and `grid-row-gap` property which is short for `row-gap` (Adds spacing between rows), `column-gap` (Adds spacing between columns) and `gap` (Adds spacing between columns and rows). 
 
-#### Example
+**Example**
 
 ```css
 .container {
@@ -515,9 +483,9 @@ This adds a spacing of `1rem` between every column in the grid container as seen
 }
 ```
 
-#### Example 2
+**Example 2**
 
-<!-- image of row gp -->
+<!-- image of row gap -->
 
 This adds a spacing of `1rem` between every row in the grid container as seen in the image above. 
 
@@ -527,5 +495,5 @@ To add a gap between columns and rows we use the `gap`  property, which is a com
 <!-- Image of gap  -->
 Now you can see this adds a spacing between the columns and the rows. 
 
-### Nesting grids
+## **Nesting grids**
 A grid child item can also serve as a grid container 
