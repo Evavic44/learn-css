@@ -1,4 +1,6 @@
-# learn-css
+# Learn CSS <img align="right" src="https://user-images.githubusercontent.com/62628408/127881594-fb40eeed-6ccc-4b3b-ac66-65fb7ee95e53.png" width="150px">
+
+
 Tutorial Repo for Learning all about CSS 
 
 <a href="https://www.buymeacoffee.com/evavic44">
