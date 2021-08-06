@@ -223,6 +223,7 @@ In the example below, we'll combine a `2fr` unit with two `1fr` units track. The
 ```
 **Result**
 <!-- Image of combining fractions (fr) -->
+<img src="https://user-images.githubusercontent.com/62628408/128458909-c7c6c073-b0f8-4851-a260-58c6224f184e.png" width="800px">
 
 This can be applied to other units as well. In this example below, we combine a `500px` track with  a `1fr` and `2fr` track
 
@@ -243,6 +244,7 @@ This can be applied to other units as well. In this example below, we combine a 
 }
 ```
 <!-- Picture of combining fractions and pixels (fr) & (px) -->
+<img src="https://user-images.githubusercontent.com/62628408/128459620-76af02d6-1f5c-42aa-85be-95e95337659c.png" width="800px">
 
 The repeat notation can also be combined with other track units. In the example below, we have a 200px track combined with 3(1fr) track. 
 
@@ -266,6 +268,7 @@ The repeat notation can also be combined with other track units. In the example 
 ```
 **Result** 
 <!-- Picture of combining repeat() notation and other units -->
+<img src="https://user-images.githubusercontent.com/62628408/128460051-1f870fc8-a1c0-49d3-8c95-4d5f59b8efba.png" width="800px">
 
 
 ## **Implicit & Explicit grid**
@@ -273,6 +276,7 @@ Previously, we specifically defined our column tracks with the `grid-template-co
 
 **Example**
 <!-- Image of Implicit grid  -->
+<img src="https://user-images.githubusercontent.com/62628408/128460139-b57fdca1-49b4-4bce-b095-8482030dd552.png" width="800px">
 
 For instance in the example below we have 8 grid child elements and we specify 3 grid columns, so the remaining columns not specified is knocked over to create rows and columns in the implicit grid which are automatically sized by default, where the size is determined by the content inside. 
 
@@ -297,6 +301,8 @@ For instance in the example below we have 8 grid child elements and we specify 3
 ```
 
 <!-- Image of Implicit grid row and column -->
+<img src="https://user-images.githubusercontent.com/62628408/128460233-c53848ab-19f9-40de-9fd1-eeeadf124f35.png" width="800px">
+
 In the diagram above, we have two grid tracks at the bottom that is outside of the defined grid. This is what we call the Implicit grid, but the grid track above that is defined with 3 columns each is the Explicit grid. 
 
 There is a way to control the size of the implicit grid track using: `grid-auto-rows` and `grid-auto-columns` 
@@ -350,6 +356,8 @@ In the example below, we used the `minmax()` property to specify the initial hei
 
 **Result**
 <!-- Image of grid auto rows: minmax() -->
+<img src="https://user-images.githubusercontent.com/62628408/128460361-a5a0de7f-27e4-416c-b359-81b6ce2d4850.png" width="800px">
+
 
 As you can see from the diagram, we explicitly set the box to have a minimum height of 100px initially, but the one that has content inside stretches out more than 100px in other to fit the content of the grid. 
 
@@ -400,6 +408,7 @@ In the image above, we have a grid container with four columns and three rows. S
 }
 ```
 <!-- Image of Item one position -->
+<img src="https://user-images.githubusercontent.com/62628408/128460488-bd5e613a-6f16-4769-81bc-9d95797a3c12.png" width="800px">
 
 From the image we can see that `Item one` is now positioned at 2 and the other items is pushed over which creates empty spaces on the grid.
 
@@ -413,6 +422,8 @@ So we can specify the start position with `grid-column-start`, we can also speci
 ```
 
 <!-- Image of item one grid column end (4) -->
+<img src="https://user-images.githubusercontent.com/62628408/128460619-34246f38-cb23-40ef-9eca-0637732661d7.png" width="800px">
+
 Now you can see that `Item one` starts at 1 (the default position) on the column spans across and ends in line 4. We can also span the rows down unsing the `grid-row-start` and `grid-row-end` property.
 
 ```css
@@ -472,6 +483,7 @@ Gutters also known as gaps can be added between grid rows or columns to space th
 ```
 
 <!-- Image of column gap -->
+<img src="https://user-images.githubusercontent.com/62628408/128460678-1c8e2f05-9d0e-485e-8e31-1467f3b7a206.png" width="800px">
 
 This adds a spacing of `1rem` between every column in the grid container as seen in the image above. 
 
@@ -486,6 +498,8 @@ This adds a spacing of `1rem` between every column in the grid container as seen
 **Example 2**
 
 <!-- image of row gap -->
+<img src="https://user-images.githubusercontent.com/62628408/128460745-9fc0822e-0cc2-4e97-8eae-3bf62147b9d9.png" width="800px">
+
 
 This adds a spacing of `1rem` between every row in the grid container as seen in the image above. 
 
@@ -493,6 +507,8 @@ To add a gap between columns and rows we use the `gap`  property, which is a com
 
 
 <!-- Image of gap  -->
+<img src="https://user-images.githubusercontent.com/62628408/128461567-e8bee3ea-9f43-472b-a7b7-3cf75f2ebb87.png" width="800px">
+
 Now you can see this adds a spacing between the columns and the rows. 
 
 ## **Nesting grids**
