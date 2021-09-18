@@ -511,5 +511,28 @@ To add a gap between columns and rows we use the `gap`  property, which is a com
 
 Now you can see this adds a spacing between the columns and the rows. 
 
-## **Nesting grids**
-A grid child item can also serve as a grid container 
+## **Grid Alignment**
+When it comes to aligninig items, grid and flexbox share a lot of similarities, but you might notice a few differences since grid is two dimensional and flexbox one. 
+
+Grid items can be aligned on the X and Y axis in it's container using the properties:
+
+ - `align-items`
+
+- `align-self`
+
+- `justify-items`
+
+- `justify-self`  
+
+**Alignment on the X axis** 
+We can align items on the X axis which is also known as the inline axis(horizontal axis) using the `justify-items` and `justify-self` properties. which are positioned using the follwoing values:
+
+- auto
+- normal
+- start
+- end
+- center
+- stretch
+- baseline
+- first baseline
+- last baselin
