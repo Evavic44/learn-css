@@ -525,7 +525,7 @@ Grid items can be aligned on the X and Y axis in it's container using the proper
 - `justify-self`  
 
 **Alignment on the X axis** 
-We can align items on the X axis which is also known as the inline axis(horizontal axis) using the `justify-items` and `justify-self` properties. which are positioned using the follwoing values:
+We can align items on the X axis which is also known as the inline axis(horizontal axis) using the `justify-items` and `justify-self` properties. which are positoioned using the follwoing values:
 
 - auto
 - normal
@@ -535,4 +535,68 @@ We can align items on the X axis which is also known as the inline axis(horizont
 - stretch
 - baseline
 - first baseline
-- last baselin
+- last baseline
+
+<!-- Image of three column grid smaller -->
+
+For example, we have 3 columns within our grid, we can align this grid items using any of the property above.
+
+```html
+<div class="container">
+   <div>Item One</div>
+   <div>Item Two</div>
+   <div>Item Three</div>
+</div>
+```
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 1rem; 
+   justify-items: stretch;
+   justify-items: center;
+   justify-items: end;
+   justify-items: start;
+}
+```
+
+Comment out the property one by one to see the result.
+<!-- Gif illustration of justify items four commonly used values() -->
+
+On the first value, we can see the grid items were aligned on the X axis to the start(which is the left)
+
+On the second value, the grid items moved to the opposite direction, which is the end of the column.
+
+From this two illustrated, you should get the idea now, the center value, will center the grid items and the stretch, which is the default value will stretcg out the items.
+
+We looked at the most commonly used four, but you can choose to explore other values.
+
+**Alignment on the Y axis** 
+Aligning items on the Y axis basically works the same way except we're aliginig on the block axis(vertical axis) by using the `align-items` and `align-self` properties. which are positoioned using the same values.
+
+```html
+<div class="container">
+   <div>Item One</div>
+   <div>Item Two</div>
+   <div>Item Three</div>
+</div>
+```
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: 200px;
+   grid-gap: 1rem; 
+   align-items: stretch;
+   align-items: center;
+   align-items: end;
+   align-items: start;
+}
+```
+
+You can see we are using the same example as used for justify-items, above. This time we are applying the justify-items property. But to see the effect of the properties, we need to add a height to the grid items. 
+
+Comment out the property one by one to see the result.
+<!-- Gif illustration of align items four commonly used values() -->
