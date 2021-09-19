@@ -527,15 +527,15 @@ Grid items can be aligned on the X and Y axis in it's container using the proper
 **Alignment on the X axis** 
 We can align items on the X axis which is also known as the inline axis(horizontal axis) using the `justify-items` and `justify-self` properties. which are positoioned using the follwoing values:
 
-- auto
-- normal
-- start
-- end
-- center
-- stretch
-- baseline
-- first baseline
-- last baseline
+- `auto`
+- `normal`
+- `start`
+- `end`
+- `center`
+- `stretch`
+- `baseline`
+- `first baseline`
+- `last baseline`
 
 <!-- Image of three column grid smaller -->
 
