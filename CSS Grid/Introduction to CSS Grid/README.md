@@ -525,6 +525,7 @@ Grid items can be aligned on the X and Y axis in it's container using the proper
 - `justify-self`  
 
 **Alignment on the X axis** 
+
 We can align items on the X axis which is also known as the inline axis(horizontal axis) using the `justify-items` and `justify-self` properties. which are positoioned using the follwoing values:
 
 - `auto`
@@ -537,7 +538,8 @@ We can align items on the X axis which is also known as the inline axis(horizont
 - `first baseline`
 - `last baseline`
 
-<!-- Image of three column grid smaller -->
+<img src="https://user-images.githubusercontent.com/62628408/133912800-63aedcd7-cdc7-4e47-806b-8fb5ba334ad8.png" width="800px">
+
 
 For example, we have 3 columns within our grid, we can align this grid items using any of the property above.
 
@@ -562,7 +564,8 @@ For example, we have 3 columns within our grid, we can align this grid items usi
 ```
 
 Comment out the property one by one to see the result.
-<!-- Gif illustration of justify items four commonly used values() -->
+<img src="https://user-images.githubusercontent.com/62628408/133912812-5c56ea5a-bfe8-4622-b65b-9f73c39d6782.gif" width="800px">
+
 
 On the first value, we can see the grid items were aligned on the X axis to the start(which is the left)
 
@@ -573,6 +576,7 @@ From this two illustrated, you should get the idea now, the center value, will c
 We looked at the most commonly used four, but you can choose to explore other values.
 
 **Alignment on the Y axis** 
+
 Aligning items on the Y axis basically works the same way except we're aliginig on the block axis(vertical axis) by using the `align-items` and `align-self` properties. which are positoioned using the same values.
 
 ```html
@@ -599,4 +603,4 @@ Aligning items on the Y axis basically works the same way except we're aliginig 
 You can see we are using the same example as used for justify-items, above. This time we are applying the justify-items property. But to see the effect of the properties, we need to add a height to the grid items. 
 
 Comment out the property one by one to see the result.
-<!-- Gif illustration of align items four commonly used values() -->
+<img src="https://user-images.githubusercontent.com/62628408/133912825-9ce2d358-b3bd-4030-b461-d455078d3253.gif" width="800px">
