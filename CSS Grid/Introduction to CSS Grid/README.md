@@ -667,3 +667,83 @@ You can see we are using the same example as used for justify-items, above. This
 
 Comment out the property one by one to see the result.
 <img src="https://user-images.githubusercontent.com/62628408/133912825-9ce2d358-b3bd-4030-b461-d455078d3253.gif" width="800px">
+
+**Align-Self / Justify-self**
+Now instead of aligning all the items in a grid container, you can align them individually using the align self and justify self property. To do this, let's add  classes to the each grid item so we can target them.
+
+```html
+<div class="container">
+   <div class="box1">Item One</div>
+   <div class="box2">Item Two</div>
+   <div class="box3">Item Three</div>
+   <div class="box4">Item Four</div>
+</div>
+```
+
+```css
+.container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-auto-rows: 200px;
+   grid-gap: 1rem; 
+}
+```
+
+<!-- Image of 3 column grid with gap -->
+To demonstrate the different alignment values, each box will be assigned it's own property.
+The first item, is showing the default behavior of align-self, which is to `stretch`. The second item, has an align-self value of `start`, the third `end` and the fourth `center`.
+
+```css
+   .box1 {
+      align-self: stretch;
+   }
+```
+
+```css
+   .box1 {
+      align-self: start;
+   }
+```
+
+```css
+   .box1 {
+      align-self: end;
+   }
+```
+
+```css
+   .box1 {
+      align-self: center;
+   }
+```
+
+As with align-self and align-items, you can apply justify-items to the grid container, to set the justify-self value for all items.
+
+```css
+   .box1 {
+      justify-self: stretch;
+   }
+```
+
+```css
+   .box1 {
+      justify-self: start;
+   }
+```
+
+```css
+   .box1 {
+      justify-self: end;
+   }
+```
+
+```css
+   .box1 {
+      justify-self: center;
+   }
+```
+
+The justify-self and justify-items properties are not implemented in flexbox. This is due to the one-dimensional nature of flexbox, and that there may be multiple items along the axis, making it impossible to justify a single item.
+
+## **How to center a div with grid**
+By combining the align and justify property, we can easilt center an item inside a grid area.
