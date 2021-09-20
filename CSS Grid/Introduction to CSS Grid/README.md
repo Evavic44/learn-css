@@ -594,13 +594,13 @@ Now we set the nested container to a grid which makes all the items witihn it gr
 
 <img src="https://user-images.githubusercontent.com/62628408/133956700-63d9ab1a-b420-4612-8c94-eda3a2d37caf.png" width="800px">
 
-This is how you nest a grid. For this nested grid items, we can also change the width add a height, grid gap, Etc.
+This is how you nest a grid. For this nested grid items, we can also change the width, add a height or grid gap, Etc.
 
 ```css
 .nested {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 70px;
+  grid-gap: 1rem
 }
 ```
 
