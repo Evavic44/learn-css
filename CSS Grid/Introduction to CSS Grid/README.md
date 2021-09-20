@@ -731,21 +731,15 @@ The first item, is showing the default behavior of align-self, which is to `stre
 .box1 {
   align-self: stretch;
 }
-```
 
-```css
 .box1 {
   align-self: start;
 }
-```
 
-```css
 .box1 {
   align-self: end;
 }
-```
 
-```css
 .box1 {
   align-self: center;
 }
@@ -757,21 +751,15 @@ As with align-self and align-items, you can apply justify-items to the grid cont
 .box1 {
   justify-self: stretch;
 }
-```
 
-```css
 .box1 {
   justify-self: start;
 }
-```
 
-```css
 .box1 {
   justify-self: end;
 }
-```
 
-```css
 .box1 {
   justify-self: center;
 }
