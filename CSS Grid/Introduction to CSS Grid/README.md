@@ -732,15 +732,15 @@ The first item, is showing the default behavior of align-self, which is to `stre
   align-self: stretch;
 }
 
-.box1 {
+.box2 {
   align-self: start;
 }
 
-.box1 {
+.box3 {
   align-self: end;
 }
 
-.box1 {
+.box4 {
   align-self: center;
 }
 ```
@@ -752,15 +752,15 @@ As with align-self and align-items, you can apply justify-items to the grid cont
   justify-self: stretch;
 }
 
-.box1 {
+.box2 {
   justify-self: start;
 }
 
-.box1 {
+.box3 {
   justify-self: end;
 }
 
-.box1 {
+.box4 {
   justify-self: center;
 }
 ```
@@ -796,3 +796,13 @@ By combining the align and justify property, we can easily center an item inside
 <!-- Add screenshot of centered div -->
 
 This is just a simple way to center a div with css grid. There are other ways which involves using `grid areas` which we'll dicsuss on another tutorial.
+
+So this brings us to the end of this tutorial. Congratulations if you made it this far. Now comes the fun part.
+
+So I curated a few simple yet interesting challenges you can take to test your layout building abiliites. Why? because it won't be no good if we don't put what we've learnt into practive and it's a great way to have what you have learnt stick. If you made it this far, I strongly recommend you take these challenges to test yourself on what you have learnt so far.
+
+## **Topics not covered in this tutorial**
+
+These are the few topics I did not cover in this tutorial but I feel are important to have a look at.
+
+- ## <a href="#">Grid Areas</a>
