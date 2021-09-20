@@ -572,7 +572,7 @@ A grid item can become a grid container. To do this, we have to set this grid it
 
 In the following example, I have a three-column grid that covers the whole width of the contaniner. On the third grid item, there are some sub items.
 
-<!-- Image of three column grid with nested items -->
+<img src="https://user-images.githubusercontent.com/62628408/133956623-ce6bd49a-aabd-41e9-83fa-aafc25945fdf.png" width="800px">
 
 But let's style the nested grid items so we can clearly see what is going on with it.
 
@@ -592,7 +592,7 @@ Now we set the nested container to a grid which makes all the items witihn it gr
 }
 ```
 
-<!-- Image of three column grid with nested grid -->
+<img src="https://user-images.githubusercontent.com/62628408/133956700-63d9ab1a-b420-4612-8c94-eda3a2d37caf.png" width="800px">
 
 This is how you nest a grid. For this nested grid items, we can also change the width add a height, grid gap, Etc.
 
@@ -604,7 +604,7 @@ This is how you nest a grid. For this nested grid items, we can also change the 
 }
 ```
 
-<!-- Image of nested grid with gap-->
+<img src="https://user-images.githubusercontent.com/62628408/133957173-4edac734-fdb5-4621-94f4-dc68a1952b09.png" width="800px">
 
 It basically works the same way as a regular grid item.
 
@@ -722,7 +722,7 @@ Now instead of aligning all the items in a grid container, you can align them in
 }
 ```
 
-<!-- Image of 3 column grid with gap -->
+<img src="https://user-images.githubusercontent.com/62628408/133912825-9ce2d358-b3bd-4030-b461-d455078d3253.gif" width="800px">
 
 To demonstrate the different alignment values, each box will be assigned it's own property.
 The first item, is showing the default behavior of align-self, which is to `stretch`. The second item, has an align-self value of `start`, the third `end` and the fourth `center`.
@@ -793,6 +793,6 @@ By combining the align and justify property, we can easily center an item inside
 }
 ```
 
-<!-- Add screenshot of centered div -->
+<img src="https://user-images.githubusercontent.com/62628408/133957351-2cc48f43-451c-46c9-8577-c7c9d5e22985.png" width="800px">
 
 This is just a simple way to center a div with css grid. There are other ways which involves using `grid areas` which we'll dicsuss on another tutorial.
