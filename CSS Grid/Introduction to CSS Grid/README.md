@@ -805,4 +805,44 @@ So I curated a few simple yet interesting challenges you can take to test your l
 
 These are the few topics I did not cover in this tutorial but I feel are important to have a look at.
 
-- ## <a href="#">Grid Areas</a>
+- ### <a href="#">Grid Areas</a>
+
+<br>
+
+# **Challenges**
+
+There are 4 challenges in total which consist of 2 very simple ones and 2 brain teasing ones.
+
+**Your Task**
+
+You are required to do these challenges by yourself using the CSS tutorial to refresh your memory. The code files can be gotten from this <a href="https://">link</a> so feel free to take a look at how I completed each challenge if you're having too much difficulty. I strongly recommend you have a go at it first and see if you can solve them by yourself.
+
+<br>
+
+**Challenge 1**
+
+Create a 3 column Grid with 4 rows
+Each grid item must have the same width and the height should be 300px long.
+
+_Source: Created_
+
+<br>
+
+**Challenge 2**
+
+Build a 2 column grid with 2 subgrid items inside the second grid item.
+
+- Each subgrid should have
+
+_Source: Created_
+
+<br>
+
+**Challenge 3**
+
+Build the three column grid layout.
+
+_Source: Frontendmmentor_
+**Challenge 4**
+
+_Source: Frontendmmentor_
