@@ -1,4 +1,8 @@
-# Learn CSS <img align="right" width="44%" src="https://user-images.githubusercontent.com/62628408/127881594-fb40eeed-6ccc-4b3b-ac66-65fb7ee95e53.png">
+<div align="center">
+
+# Learn CSS
+
+<img width="44%" src="https://user-images.githubusercontent.com/62628408/127881594-fb40eeed-6ccc-4b3b-ac66-65fb7ee95e53.png">
 
 Tutorial Repo for Learning all about CSS
 
@@ -8,7 +12,10 @@ Tutorial Repo for Learning all about CSS
 
 #### Interested in contributing to this project? Read the [contribution guidelines](CONTRIBUTING.md) before making a PR. 🙂
 
+</div>
+
 <!-- Topics -->
+
 ### Topics
 
 - [Introduction to CSS Grid.](https://github.com/Evavic44/learn-css/tree/main/CSS%20Grid/Introduction%20to%20CSS%20Grid)
