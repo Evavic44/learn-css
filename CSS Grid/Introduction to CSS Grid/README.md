@@ -15,8 +15,8 @@ This is a tutorial in a series I'm working on, which is Building Responsive webs
 
 <ul>
    <li>A basic understanding of HTML and CSS</li>
-   <li>A text-editor: <a href="#" alt="VS code website" target="_blank">VS Code</a>, <a href="#" alt="Sublime website" target="_blank">Sublime Text</a> or <a href="#" alt="Atom" target="_blank">Atom</a></li>
-   <li>A browser: <a href="#" target="_blank">Firefox</a> or <a href="#" target="_blank">Edge</a> (or anyone you're most comfortable with, except IE)</li>
+   <li>A text-editor: <a href="https://code.visualstudio.com/" alt="VS code website" target="_blank">VS Code</a>, <a href="https://www.sublimetext.com/download" alt="Sublime website" target="_blank">Sublime Text</a> or <a href="https://atom.io/" alt="Atom" target="_blank">Atom</a></li>
+   <li>A browser: <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> or <a href="https://www.microsoft.com/en-us/edge" target="_blank">Edge</a> (or anyone you're most comfortable with, except IE)</li>
 </ul>
 
 ### **Additional Information**
@@ -805,7 +805,7 @@ So I curated a few simple yet interesting challenges you can take to test your l
 
 These are the few topics I did not cover in this tutorial but I feel are important to have a look at.
 
-- ### <a href="#">Grid Areas</a>
+- ### <a href="https://developer.mozilla.org/en-US/docs/Glossary/Grid_Areas">Grid Areas</a>
 
 <br>
 
