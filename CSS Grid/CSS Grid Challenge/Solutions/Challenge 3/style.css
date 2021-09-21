@@ -1,0 +1,30 @@
+/*
+   ----------------------------Challenge 2------------------------------------
+      Make a 5 column grid out of 10 items whose widths are as follows: repeat(2, 1fr)2fr, and repeat(2, 1fr).
+      Give the columns in the grid a 20px gap.
+      Give the rows in the grid a 10px gap.
+      Define the Implicit rows to be 100px.
+   ----------------------------------------------------------------------------
+   */
+
+body {
+  background: #262335;
+  display: grid;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.container > div {
+  padding: 1rem;
+  border: 1px solid #262335;
+  background: #4c6ca0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+  grid-auto-rows: 100px;
+}
