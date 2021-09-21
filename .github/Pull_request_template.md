@@ -1,8 +1,10 @@
-**Please delete this line before submitting** - Any line that is not being used throughout this page(This one included).
+<!-- **Please delete any line that is not being used throughout this page.** -->
 
-<!-- Are you working on the challenge? -->
+<!-- Are you working on a challenge? -->
 
 # [Your name here] -> [Challenge No]
+
+<!-- Are you working on an issue? -->
 
 **Issue No**: <!-- Add issue number E.g #40-->
 
