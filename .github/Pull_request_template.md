@@ -1,30 +1,28 @@
-<!-- Please delete options that are not being used.  -->
+**Please delete this line before submitting** - Any line that is not being used throughout this page(This one included).
 
-### Issue No: <!-- Add issue number here -->
+<!-- Are you working on the challenge? -->
 
-E.g #40
+# [Your name here] -> [Challenge No]
 
-### What does this PR do?:
+**Issue No**: <!-- Add issue number E.g #40-->
 
-<!-- Add the brief description here -->
+**What does this PR do?:**
 
-E.g Add challenge 1 solution
+<!-- E.g Add challenge 1 solution -->
 
-- [ ]
-
-### Description of Task to be completed?
+**Description of Task to be completed?**
 
 <!-- Are there any changes required before merging this PR? -->
 
-### Any background context you want to provide?
+**What is the relevant issue link?**
 
-### What is the relevant issue link?
+<!-- If none, delete both lines. -->
 
-### Screenshots (if appropriate)
+**Screenshots (if appropriate)**
 
-### Questions:
+**Questions:**
 
-## IHave you read the contribution Guidelines?
+**Have you read the contribution Guidelines?**
 
 - [ ] Yes
 - [ ] No
