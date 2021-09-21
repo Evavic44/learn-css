@@ -19,9 +19,9 @@ Interested in contributing to this project? Read the <a href="">contribution gui
 
 - <a href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/">Build Responsive Real-World Websites with HTML and CSS</a> Udemy course by <a href="https://github.com/jonasschmedtmann">Jonas Schmedtmann</a> _(226 lectures / 49.5 total hours)_
 
+<!-- Contributing guidelines -->
 
-
-
+### **[Contributing Guidelines](CONTRIBUTING.md)**
 
 
 
