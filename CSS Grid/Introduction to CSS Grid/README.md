@@ -600,7 +600,7 @@ This is how you nest a grid. For this nested grid items, we can also change the 
 .nested {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem
+  grid-gap: 1rem;
 }
 ```
 
@@ -819,30 +819,39 @@ You are required to do these challenges by yourself using the CSS tutorial to re
 
 <br>
 
-**Challenge 1**
+### **Challenge 1**
 
-Create a 3 column Grid with 4 rows
-Each grid item must have the same width and the height should be 300px long.
+- Create a 3 column Grid with 4 rows.
+- The grid items must have the same width and the height should be 100px long.
 
-_Source: Created_
-
-<br>
-
-**Challenge 2**
-
-Build a 2 column grid with 2 subgrid items inside the second grid item.
-
-- Each subgrid should have
-
-_Source: Created_
+<a href="#" title="Challenge1">Code file</a>
 
 <br>
 
-**Challenge 3**
+### **Challenge 2**
 
-Build the three column grid layout.
+- Build a 2 column grid with 4 subgrid items inside the second grid item.
+- Each subgrid should have a gap of 10px.
 
-_Source: Frontendmmentor_
-**Challenge 4**
+<a href="#" title="Challenge2">Code file</a>
 
-_Source: Frontendmmentor_
+<br>
+
+### **Challenge 3**
+
+- Make a 5 column grid out of 10 items whose widths are as follows: repeat(2, 1fr)2fr, and repeat(2, 1fr).
+- Give the columns in the grid a 20px gap.
+- Give the rows in the grid a 10px gap.
+- Define the Implicit rows to be 100px.
+
+<a href="#" title="Challenge3">Code file</a>
+
+<br>
+
+### **Challenge 4**
+
+- Create the 8 x 8 chess layout using grid.
+- Define each column and rows to be 30px in size.
+- Bonus points if you can add the colors.
+
+<a href="#" title="Challenge4">Code file</a>
