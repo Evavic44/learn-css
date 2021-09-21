@@ -1,0 +1,31 @@
+/*
+   ----------------------------Challenge 2------------------------------------
+    Build a 2 column grid with 4 subgrid items inside the second grid item.
+    Each subgrid should have a gap of 10px.
+   ----------------------------------------------------------------------------
+   */
+body {
+  background: #262335;
+  display: grid;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.container > div,
+.nested > div {
+  padding: 1rem;
+  border: 1px solid #262335;
+  background: #4c6ca0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nested {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
