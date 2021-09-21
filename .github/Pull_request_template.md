@@ -27,4 +27,4 @@ E.g Add challenge 1 solution
 ## IHave you read the contribution Guidelines?
 
 - [ ] Yes
-- [] No
+- [ ] No
