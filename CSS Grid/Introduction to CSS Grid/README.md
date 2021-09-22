@@ -1,6 +1,9 @@
 <h1 align="center"><b>Introduction to CSS Grid</b></h1>
 
-_This is a reference guide on CSS `grid` With Examples_
+<h3 align="center"><img src="https://user-images.githubusercontent.com/62628408/134411081-82262050-2186-404e-a1da-5772fc43fd5d.png" width="600px"></h3>
+
+
+<h4 align="center">This is a reference guide on CSS grid With Examples</h4>
 
 ## **Why this tutorial**
 
