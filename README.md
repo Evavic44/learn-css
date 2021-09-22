@@ -2,7 +2,9 @@
 
 # Learn CSS
 
-<img width="200px" src="https://user-images.githubusercontent.com/62628408/127881594-fb40eeed-6ccc-4b3b-ac66-65fb7ee95e53.png">
+<!-- <img width="200px" src="https://user-images.githubusercontent.com/62628408/127881594-fb40eeed-6ccc-4b3b-ac66-65fb7ee95e53.png"> -->
+
+<img src="https://user-images.githubusercontent.com/62628408/134407812-1c379d1c-596e-44ef-98e3-c82268c2ea03.gif" width="600px">
 
 ### Tutorial for Learning all about CSS
 
