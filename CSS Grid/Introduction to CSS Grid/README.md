@@ -820,38 +820,43 @@ You are required to do these challenges by yourself using the CSS tutorial to re
 <br>
 
 ### **Challenge 1**
+<img src="https://user-images.githubusercontent.com/62628408/134364407-e14ffeee-0b56-4349-81d2-d07264419234.png" width="600px">
 
 - Create a 3 column Grid with 4 rows.
 - The grid items must have the same width and the height should be 100px long.
 
-<a href="#" title="Challenge1">Code file</a>
+<a href="https://github.com/Evavic44/learn-css/tree/main/CSS%20Grid/CSS%20Grid%20Challenge/Solutions/Challenge%201" title="Challenge1">Code file</a>
 
 <br>
 
 ### **Challenge 2**
 
+<img src="https://user-images.githubusercontent.com/62628408/134365190-94af5a45-77e9-4da8-bb39-854ae6444955.png" width="600px">
+
 - Build a 2 column grid with 4 subgrid items inside the second grid item.
 - Each subgrid should have a gap of 10px.
 
-<a href="#" title="Challenge2">Code file</a>
+<a href="https://github.com/Evavic44/learn-css/tree/main/CSS%20Grid/CSS%20Grid%20Challenge/Solutions/Challenge%202" title="Challenge2">Code file</a>
 
 <br>
 
 ### **Challenge 3**
+<img src="https://user-images.githubusercontent.com/62628408/134365586-91b5b59c-51e4-4240-93b7-eb4efd407793.png" width="600px">
 
 - Make a 5 column grid out of 10 items whose widths are as follows: repeat(2, 1fr) 2fr and repeat(2, 1fr).
 - Give the columns in the grid a 20px gap.
 - Give the rows in the grid a 10px gap.
 - Define the Implicit rows to be 100px.
 
-<a href="#" title="Challenge3">Code file</a>
+<a href="https://github.com/Evavic44/learn-css/tree/main/CSS%20Grid/CSS%20Grid%20Challenge/Solutions/Challenge%203" title="Challenge3">Code file</a>
 
 <br>
 
 ### **Challenge 4**
+<img src="https://user-images.githubusercontent.com/62628408/134365834-bd6e6f62-94a8-4428-8772-1a8499dd658b.png" width="600px">
 
 - Create the 8 x 8 chess layout using grid.
 - Define each column and rows to be 30px in size.
 - Bonus points if you can add the colors.
 
-<a href="#" title="Challenge4">Code file</a>
+<a href="https://github.com/Evavic44/learn-css/tree/main/CSS%20Grid/CSS%20Grid%20Challenge/Solutions/Challenge%204" title="Challenge4">Code file</a>
