@@ -1,0 +1,60 @@
+/*
+   ----------------------------Challenge 2------------------------------------
+    Create the 8 x 8 chess layout using grid.
+    Define each column and rows to be 30px in size.
+    Bonus points if you can add the colors.
+   ----------------------------------------------------------------------------
+   */
+body {
+  background: #262335;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container > div {
+  padding: 1rem;
+  border: 1px solid #190c00;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 70px;
+  border: 15px solid #f2e5cc;
+}
+
+.container div:nth-child(1),
+.container div:nth-child(3),
+.container div:nth-child(5),
+.container div:nth-child(7),
+.container div:nth-child(10),
+.container div:nth-child(12),
+.container div:nth-child(14),
+.container div:nth-child(16),
+.container div:nth-child(17),
+.container div:nth-child(19),
+.container div:nth-child(21),
+.container div:nth-child(23),
+.container div:nth-child(26),
+.container div:nth-child(28),
+.container div:nth-child(30),
+.container div:nth-child(32),
+.container div:nth-child(33),
+.container div:nth-child(35),
+.container div:nth-child(37),
+.container div:nth-child(39),
+.container div:nth-child(42),
+.container div:nth-child(44),
+.container div:nth-child(46),
+.container div:nth-child(48),
+.container div:nth-child(49),
+.container div:nth-child(51),
+.container div:nth-child(53),
+.container div:nth-child(55),
+.container div:nth-child(58),
+.container div:nth-child(60),
+.container div:nth-child(62),
+.container div:nth-child(64) {
+  background: #f2e5cc;
+}
