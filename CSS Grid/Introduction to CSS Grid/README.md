@@ -839,7 +839,7 @@ You are required to do these challenges by yourself using the CSS tutorial to re
 
 ### **Challenge 3**
 
-- Make a 5 column grid out of 10 items whose widths are as follows: repeat(2, 1fr)2fr, and repeat(2, 1fr).
+- Make a 5 column grid out of 10 items whose widths are as follows: repeat(2, 1fr) 2fr and repeat(2, 1fr).
 - Give the columns in the grid a 20px gap.
 - Give the rows in the grid a 10px gap.
 - Define the Implicit rows to be 100px.
