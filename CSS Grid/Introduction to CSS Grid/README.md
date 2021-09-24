@@ -808,7 +808,7 @@ So I curated a few simple yet interesting challenges you can take to test your l
 
 These are the few topics I did not cover in this tutorial but I feel are important to have a look at.
 
-- ### <a href="#">Grid Areas</a>
+- ### <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas">Grid Template Areas</a>
 
 <br>
 
