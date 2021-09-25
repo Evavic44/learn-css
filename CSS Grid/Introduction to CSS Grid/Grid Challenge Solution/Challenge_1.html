@@ -1,0 +1,51 @@
+<!-- Solutions to the challenges -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Challenge 1</title>
+    <style>
+      /*
+   ----------------------------Challenge 1------------------------------------
+    1. Create a 3 column Grid with 4 rows.
+    2. The grid items must have the same width and the height should be 100px long
+   ----------------------------------------------------------------------------
+   */
+
+      body {
+        background: #262335;
+        display: grid;
+        align-items: center;
+        height: 100vh;
+        padding: 1rem;
+      }
+
+      .container > div {
+        padding: 1rem;
+        border: 1px solid #262335;
+        background: #f2e5cc;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+    </div>
+  </body>
+</html>

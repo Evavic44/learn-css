@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example 1</title>
+    <style>
+      body {
+        background: #262335;
+        padding: 10rem 3rem;
+      }
+
+      .container > div {
+        color: #262335;
+        padding: 2rem;
+        border: 1px solid #262335;
+        background: #f2e5cc;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 200px;
+        grid-gap: 1rem;
+      }
+
+      .box1 {
+        align-self: stretch;
+      }
+      .box2 {
+        align-self: start;
+      }
+      .box3 {
+        align-self: end;
+      }
+      .box4 {
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">A</div>
+      <div class="box2">B</div>
+      <div class="box3">C</div>
+      <div class="box4">D</div>
+    </div>
+  </body>
+</html>

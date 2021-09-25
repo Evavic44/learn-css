@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example 1</title>
+    <style>
+      body {
+        background: #262335;
+        padding: 10rem 3rem;
+      }
+
+      .container > div {
+        color: #262335;
+        padding: 2rem;
+        border: 1px solid #262335;
+        background: #f2e5cc;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+        grid-gap: 1rem;
+      }
+
+      .nested > div {
+        border: 1px solid #262335;
+        padding: 0.5rem;
+      }
+
+      .nested {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>Grid</div>
+      <div>Grid</div>
+      <div class="nested">
+        <div>Sub Grid</div>
+        <div>Sub Grid</div>
+        <div>Sub Grid</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Grid Challenge 3</title>
+    <style>
+      /*
+   ----------------------------Challenge 3------------------------------------
+      1. The rows are explicitly stated to be 100px.
+      2. On the column, position box A to start at line 1 and end on line 3.
+      3. On the column, position box B at line 3.
+      4. On the row, position box B to start at line 1 and end on line 3.
+   ----------------------------------------------------------------------------
+   */
+
+      body {
+        background: #262335;
+        display: grid;
+        align-items: center;
+        height: 100vh;
+        padding: 1rem;
+      }
+
+      .container > div {
+        padding: 1rem;
+        border: 1px solid #262335;
+        background: #f2e5cc;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+      }
+
+      .container > div:first-child {
+        grid-column: 1 / 3;
+      }
+
+      .container > div:nth-child(2) {
+        grid-column: 3;
+        grid-row: 1 / 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+    </div>
+  </body>
+</html>
